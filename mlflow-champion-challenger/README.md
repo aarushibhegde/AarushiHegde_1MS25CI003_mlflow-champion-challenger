@@ -1,7 +1,9 @@
 # Champion–Challenger Model Comparison with Hugging Face and MLflow
 
-Name: K Ishani
-USN: 1MS25CI060
+Student: Aarushi Hegde
+USN: 1MS25CI003
+
+> This is a permitted copy/adaptation of the original project by K Ishani. Original authorship and project provenance are acknowledged in the repository's top-level README.
 
 ## 1. Task and models
 
@@ -9,7 +11,7 @@ USN: 1MS25CI060
 - **Dataset:** GLUE SST-2 validation set, random sample of 100 sentences (seed 42), saved in `data/eval_inputs.csv`
 - **Model A (current Champion):** `distilbert-base-uncased-finetuned-sst-2-english` (~67M parameters)
 - **Model B (Challenger):** `siebert/sentiment-roberta-large-english` (~355M parameters)
-- **New data for the final step:** 10 sentences I wrote myself, in `data/new_data.csv` (not part of the evaluation set)
+- **New data for the final step:** 10 sample sentences in `data/new_data.csv` (not part of the evaluation set)
 
 ## 2. Champion rule (written BEFORE the final run)
 
@@ -58,7 +60,7 @@ Open http://127.0.0.1:5000 to see the experiment and the Models page.
 | avg_latency_ms | 50.76 | 351.73 | 300.97 | lower |
 | total_inference_s | 5.08 | 35.17 | 30.09 | lower |
 
-Plots are in `outputs/` (confusion matrices, comparison bar chart, latency chart). Cases where the models disagree are in `outputs/disagreements.csv`, with my comments for them.
+Plots are in `outputs/` (confusion matrices, comparison bar chart, latency chart). Cases where the models disagree are in `outputs/disagreements.csv`, with comments from the original project.
 
 ## 5. Decision
 
