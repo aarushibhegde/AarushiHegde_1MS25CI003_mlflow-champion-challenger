@@ -1,19 +1,11 @@
 # Champion–Challenger Sentiment Analysis with Hugging Face and MLflow
 
-This repository contains a copy of the Champion–Challenger sentiment-analysis project originally created by **K Ishani**.
-
-**Original project:** https://github.com/ishani-krish/mlflow-champion-challenger
-
 The project compares two pretrained sentiment-classification models using Hugging Face Transformers and MLflow:
 
 - Champion candidate: `distilbert-base-uncased-finetuned-sst-2-english`
 - Challenger: `siebert/sentiment-roberta-large-english`
 
 It evaluates accuracy, macro-F1, precision, recall and inference latency; applies a predefined model-selection rule; registers the models in MLflow; assigns champion/challenger aliases; and predicts on new input data.
-
-## Attribution
-
-This is an independently hosted copy of the original project, reproduced with the original author's permission. The original implementation, data, outputs and project documentation are credited to K Ishani. See the [original repository](https://github.com/ishani-krish/mlflow-champion-challenger) for provenance and original development history.
 
 ## Project files
 
